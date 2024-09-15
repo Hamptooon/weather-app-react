@@ -1,0 +1,93 @@
+/* App.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4299e1, #9f7aea, #ed64a6);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 584px;
+    color: white;
+    border-radius: 32px;
+    padding: 24px;
+    backdrop-filter: blur(32px);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    height: 64px;
+    border-radius: 32px;
+    margin-bottom: 32px;
+}
+
+.form input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding-left: 16px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form button {
+    background-color: #ed64a6;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #d53f8c;
+}
+
+.spinner {
+    font-size: 5rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info .temperature {
+    font-size: 144px;
+    font-weight: 300;
+}
+
+.weather-info .icon {
+    font-size: 93px;
+}
+
+.weather-info .details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.details-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 19px;
+}
